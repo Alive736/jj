@@ -1,0 +1,170 @@
+
+.fl{float: left;}
+.fr{float: right;}
+.cui-row {margin-bottom: 12px;clear: both;display: block;}
+.cui-row .cui-form-title{display: block;overflow: hidden;}
+.cui-row .cui-form-title h2{font-size: 15px;line-height: 40px;font-weight: bold;}
+.cui-row .cui-form-title p{background: #f3fbff; padding: 10px; color: #4d9ad2;}
+.page-title h2{text-align: center;font-size: 24px;font-weight: bold;width: 500px;margin: 0 auto;line-height: 36px;margin-bottom: 25px;}
+.cui-table {width: 100%;background-color: #fff;color: #333;border-collapse:collapse; background-clip: padding-box;position:relative;}
+.cui-table th {text-align: center;font-weight: 400;}
+.cui-table td, .cui-table th{border-width: 1px;border-style: solid;border-color: #eee;background-clip: padding-box;position:relative;}
+.cui-table td, .cui-table th {position: relative;line-height:28px;}
+.cui-table td, .layui-table th{padding:4px 6px;text-align:left;}
+.cui-table tr th{background-color: #f2f2f2;padding:4px 6px;font-weight:bold;color:#333;height: 35px;}
+.cui-table tr td{font-weight:normal;word-break:break-all;background-clip: padding-box;box-sizing: border-box;}
+.cui-table tr td.trl{text-align:right;background:#f5f5f5;width:22%; background-clip: padding-box;position:relative;}
+.cui-table.tbg tr:nth-child(2n+0){background:#f7f7f7}
+.cui-table tr td select{float:left; padding: 5px 0px;}
+.cui-table td a{color:#fff;margin-bottom: 5px;}
+.cui-table td .cz a > i.icon-baocun{font-size: 14px;top: 0px;} 
+.cui-table td .cz a > i{position: relative;top: 0px; margin-right: 3px;}
+.cui-table td .czzc a{color:#333;}
+.cui-table td .czzc a:hover{text-decoration: underline;}
+.cui-table tr th p{text-align:center;line-height:18px;}
+.cui-table tr th span{color:#ff0000;}
+.cui-table tr td.tac{text-align:center;}
+.cui-table tr td.tal{text-align:left;}
+.cui-table tr td.tar{text-align:right;}
+.cui-table .bg_lan td{font-size: 14px;}
+.cui-table tr td.bzjTime .Wdate{padding-right: 12px;height: 23px;background-position: 151px;}
+.cui-table tr td.bzjTime .Wdate,.cui-table tr td #MarginAmount {height:30px;padding-left:5px;}
+.cui-table tr.wbg th{background-color:#fff;}
+.cui-table tr td.tbg{background:#f7f7f7}
+.cui-table tr td.table-input .td-input{border:0!important;width:100%;text-align:center;background:none;}
+.cui-table tr td.table-input.current{background:#fffce0;}
+.cui-table tr td .select,.cui-table tr td input{border: 1px solid #DCDFE6;border-radius: 2px;margin: 0 5px 0 0;display: inline-block;height: 30px;line-height: 30px;box-sizing: border-box;padding: 0 5px;}
+.cui-table tr td a{color: #409EFF;}
+.cui-table tr td .title{font-weight: bold;font-size: 16px;margin: 15px;}
+.cui-scroll-table{width: 100%; overflow-x: auto;}
+.cui-scroll-table .cui-table{width: 2000px;}
+
+.cui-table td, .layui-table th{text-align: center;}
+.cui-gonggao-list a{width: 119px;height: 26px;display: inline-block;background: url(../images/gg-right-downbtn.png);margin-bottom: 0;position: relative;top: 3px;border-radius: 4px;text-align: center;color: #fff!important;}
+.cui-gonggao-list a .icons{width: 20px;height: 17px;display: inline-block;background: url(../images/gg-right-downbtn.png);top: 3px; position: relative;}
+.cui-gonggao-list a.cui-btn-tb{background: #1174b9;}
+.cui-gonggao-list a.IsLose{background: #dcdcdc;cursor: default;}
+.cui-gonggao-list a.cui-btn-tb .icons{background-position: 0 0;}
+.cui-gonggao-list a.cui-btn-sq{margin-left:3px; background: #15a95e;}
+.cui-gonggao-list a.cui-btn-sq .icons{background-position: 0 -18px;}
+.cui-gonggao-list a.cui-btn-downs{background: #479be6;top:2px;}
+.cui-gonggao-list a.cui-btn-downs .icons{background-position: 0 -38px;}
+.cui-gonggao-list .tal .dot{padding-left: 18px;margin-right: 5px;color: #999;}
+.cui-gonggao-list .w210{width: 260px;}
+
+/**招标公告附件下载*/ 
+.zbfileWarp{border-top:1px solid #ccc;margin-top:30px;font-size:14px;}
+.zbfileWarp .container{margin-top:10px;}
+.zbfileWarp span{display: block;margin-bottom: 5px;margin-top:4px; max-width: 500px;overflow: hidden;float: left;width:500px;text-overflow: ellipsis;white-space: nowrap;}
+.zbfileWarp span.sp{width:100%;float:none;font-weight:bold;}
+.zbfileWarp .container span{display: block;margin-bottom: 5px;max-width: 500px;overflow: hidden;float: left;width:500px;text-overflow: ellipsis;white-space: nowrap;}
+.zbfileWarp .container span.sp{width:100%;float:none;font-weight:bold;}
+.zbfileWarp .container li {margin-top: 0;}
+.zbfileWarp .container li.bidnameCss {font-weight: bold;color:#666;}
+.zbfileWarp .container li.bidnameCss:hover{color: #666;} 
+
+.zbfileWarp .container li.bidnameCss:before{content: '';background: #0154a4;display: block;width: 3px;float: left;line-height: 15px;margin-top: 4px;height: 13px;display: inline-block;margin-right: 5px;}
+.zbfileWarp .container li.hasbids {padding-left: 3.6em;margin-bottom: 0;clear: both;height: 44px;line-height: 30px;overflow: hidden;}
+.zbfileWarp .container li a{margin-left: 70px;margin-top:2px; background: #479be6;color: white;border-radius: 4px;height: 26px;line-height: 26px;padding:0px 12px; float: left;}
+.zbfileWarp .container li a.kj{width:78px;}
+.zbfileWarp .container li a.pt{width:78px;}
+.zbfileWarp .container li a.kj:before{content: '';width:16px;height:16px; background: url(../images/kj.png) no-repeat -0px 0px;display: inline-block;background-size: cover;margin-top:5px;float: left;margin-right: 6px; position: relative;left: 14px}
+.zbfileWarp .container li a.pt:before{content: '';width:16px;height:16px; background: url(../images/pt.png) no-repeat -0px 0px;display: inline-block;background-size: cover;margin-top:5px;float: left;margin-right: 19px; position: relative;left: 14px}
+.zbfileWarp .container li a.gs{background: #fd982d;margin-left: 10px;} 
+.zbfileWarp .container li a.gs:before{content: '';width:17px;height:17px; background: url(../images/sd.png) no-repeat -0px 0px;display: inline-block;background-size: cover;margin-top:5px;float: left;margin-right: 10px; }
+.zbfileWarp .container li a:hover{color: white;} 
+.zbfileWarp .container li .tqm{color:gray;margin-left:5px;} 
+.zbfileWarp .container li .mmcode{margin:0px 5px;}
+  
+.zbfileWarp .container li span:before{content: '';width: 0px;height:0px;display: inline-block;background: #dedede;border-radius: 100px;margin-right: 4px;position: relative;top: -3px;}
+.ggview-tips-arrow{width: 11px;height: 10px;display: inline-block;position: absolute; left: 140px;top: 7px;z-index: 9;}
+.zbfileWarp{margin:20px 50px 50px 50px;overflow: hidden;}
+
+.zbfileWarp .container em{
+    margin-left: 10px;
+    float: left;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    border-radius: 100px;
+    line-height: 24px;
+    text-align: center;
+    position: relative;
+    top: 2px;
+    }
+.zbfileWarp .container li .down-li {
+    width: 28px;
+    height: 44px;
+    display: inline-block;
+    background: url(../images/down-li-icon.png) no-repeat;
+    float: left;
+    text-align: center;
+    font-weight: bold;
+    color: #479be6;
+    margin-right: 5px;
+}
+
+.cui-gg-tab {position: relative;}
+.cui-gg-tab #tablist{border-top: 1px solid #e6e6e6;border-left: 1px solid #e6e6e6;border-right: 1px solid #e6e6e6; border-bottom: 1px solid #e6e6e6; height: 50px; background: #f6f6f6;}
+.cui-gg-tab #tablist li { float:left; padding:15px 40px; cursor:pointer; border-right: 1px solid #e6e6e6; transition:all ease .3s; } 
+.cui-gg-tab #tablist li.tabin { background: #e9f5ff;color: #479be6;font-weight: bold; } 
+.cui-gg-tab .content-box { width:100%; height:auto; position:relative; overflow:hidden; } 
+.cui-gg-tab .content { clear:both; padding:2px; display: none; transition:all ease .3s; position:relative; overflow: hidden; top:0; left:0; } 
+.cui-gg-tab .current { display: block; } 
+.cui-gg-tab .content h1 { font-size:18px; margin-bottom:20px; margin-top:20px; }
+								
+.cui-pai-list{zoom: 1;clear: none!important;padding-left: 10px;}
+.cui-pai-list:after{content:"";clear:both;display:block!important;height:0}
+.cui-pai-list .pai-item{float:left;margin: 0 10px 20px 0;_display:inline;}
+.cui-pai-list .pai-item:nth-child(4){ /* margin: 0; */}
+.cui-pai-list .pai-item p{margin:0;padding:0}
+.cui-pai-list .pai-item .link-wrap{border:1px solid #eaeaea;display:block;position:relative;width:252px;height:315px}
+.cui-pai-list .pai-item .link-wrap:hover{border-color:#dc2625;outline:2px solid #dc2625;text-decoration:none}
+.cui-pai-list .pai-item .link-wrap:hover .header-section .title{color:#d91615}
+.cui-pai-list .pai-item .link-wrap .header-section{display:block;text-align:center;overflow:hidden;position:relative;width:252px;height:185px;line-height:180px}
+.cui-pai-list .pai-item .link-wrap .header-section .pic{display:inline;vertical-align:middle;max-width:252px;height: 160px;}
+.cui-pai-list .pai-item .link-wrap .header-section .title{white-space:nowrap;text-overflow:ellipsis;overflow:hidden;background-color:#fff;background:rgba(255,255,255,.9);filter:alpha(opacity=90);color:#000;font-size:14px;position:absolute;padding:0 13px;left:0;bottom:0;height:24px;line-height:24px;width:226px;text-align:left}
+.cui-pai-list .pai-item .link-wrap .info-section{color:#999;display:block;font-size:12px;padding-left:13px;height:131px}
+.cui-pai-list .pai-item .link-wrap .info-section .price{padding-top:10px;height:30px;line-height:30px}
+.cui-pai-list .pai-item .link-wrap .info-section .price .value{color:#777;padding-left:10px;font-weight:700}
+.cui-pai-list .pai-item .link-wrap .info-section .price .value em{font-family:tahoma,'Hiragino Sans GB','\5b8b\4f53',sans-serif;font-size:24px}
+.cui-pai-list .pai-item .link-wrap .info-section .price .value em s{font-family:'Microsoft YaHei',arial tahoma,'Hiragino Sans GB','\5b8b\4f53',sans-serif;padding-left:4px;text-decoration:none}
+.cui-pai-list .pai-item .link-wrap .info-section .price .value .currency{font-family:arial,tahoma,'Hiragino Sans GB','\5b8b\4f53',sans-serif;font-weight:400;font-size:14px}
+.cui-pai-list .pai-item .link-wrap .info-section .price .value .price-font-small{font-size:16px}
+.cui-pai-list .pai-item .link-wrap .info-section .price .not-known{color:#d91615;font-size:16px;font-weight:500}
+.cui-pai-list .pai-item .link-wrap .info-section .price .not-known-done{color:#777;font-size:16px;font-weight:500}
+.cui-pai-list .pai-item .link-wrap .info-section .price .ellipsisValue{width:150px;white-space:nowrap;text-overflow:ellipsis;overflow:hidden;display:inline-block;position:relative;top:5px}
+.cui-pai-list .pai-item .link-wrap .info-section .price-todo .value{color:#19aa6b}
+.cui-pai-list .pai-item .link-wrap .info-section .price-assess{padding-top:2px;line-height:20px;height:20px;margin:0}
+.cui-pai-list .pai-item .link-wrap .info-section .price-assess .value .currency,.cui-pai-list .pai-item .link-wrap .info-section .price-assess .value em{font-size:12px;font-weight:400}
+.cui-pai-list .pai-item .link-wrap .info-section .time{padding-top:2px;line-height:20px;height:20px}
+.cui-pai-list .pai-item .link-wrap .info-section .time .hide-day .pai-day{display:none}
+.cui-pai-list .pai-item .link-wrap .info-section .time .hide-hour .pai-hour{display:none}
+.cui-pai-list .pai-item .link-wrap .info-section .time .value{font-family:tahoma,'Hiragino Sans GB','\5b8b\4f53',sans-serif;color:#000;padding-left:10px;font-weight:700}
+.cui-pai-list .pai-item .link-wrap .info-section .mnNotice-price{color:#d91615}
+.cui-pai-list .pai-item .link-wrap .footer-section{zoom:1;clear:none!important;border-top:1px solid #eee;position:absolute;left:0;bottom:0;width:252px;height:36px;line-height:36px}
+.cui-pai-list .pai-item .link-wrap .footer-section:after{content:"";clear:both;display:block!important;height:0}
+.cui-pai-list .pai-item .link-wrap .footer-section .num-apply,.cui-pai-list .pai-item .link-wrap .footer-section .num-auction{color:#999;float:left;padding-left:92px;width:240px}
+.cui-pai-list .pai-item .link-wrap .footer-section .num-apply em,.cui-pai-list .pai-item .link-wrap .footer-section .num-auction em{color:#666;padding-right:4px;font-weight:700}
+.cui-pai-list .pai-item .link-wrap .footer-section .num-auction{border-right:1px solid #eee}
+.cui-pai-list .pai-item .link-wrap .flag-section .flag{position:absolute}
+.cui-pai-list .pai-item .link-wrap .flag-section .flag-doing,.cui-pai-list .pai-item .link-wrap .flag-section .flag-todo,.cui-pai-list .pai-item .link-wrap .flag-section .flag-zhaoshang{background-image:url(../images/jingjia.png);background-repeat:no-repeat;background-position:0 0;width:70px;height:23px;right:-4px;bottom:45px}
+.cui-pai-list .pai-item .link-wrap .flag-section .flag-todo{background-image:url(../images/start.png);background-position:0 0}
+.cui-pai-list .pai-item .link-wrap .flag-section .flag-break,.cui-pai-list .pai-item .link-wrap .flag-section .flag-done,.cui-pai-list .pai-item .link-wrap .flag-section .flag-revocation{right:6px;top:85px;width:121px;height:67px}
+.cui-pai-list .pai-item .link-wrap .tag-section{position:absolute;top:0;left:0;width:100%;zoom:1;clear:none!important}
+.cui-pai-list .pai-item .link-wrap .tag-section:after{content:"";clear:both;display:block!important;height:0}
+.cui-pai-list .pai-item .link-wrap .tag-section .pai-tag{position:relative;float:right;width:45px;height:22px;line-height:22px;text-align:center;font-family:'\5b8b\4f53',arial tahoma,'Hiragino Sans GB',sans-serif;display:none}
+.cui-pai-list .pai-item .link-wrap .tag-section .pai-tag-show{display:block}
+.cui-pai-list .pai-item .link-wrap .tag-section .tag-buy-restrictions{background:#0FBE84;color:#fff}
+.cui-pai-list .pai-item .link-wrap .tag-section .tag-support-loans{background:#FFA62F;color:#fff}
+.cui-pai-list .pai-item .link-wrap .tag-section .tag-zhaiquan{background:#d91615;color:#fff}
+.cui-pai-list .pai-item .link-wrap .tag-section .tag-support-org-loan{background:#FFA62F;color:#fff;width:58px}
+.cui-pai-list .field-hide{display:none!important}
+.cui-pai-list .pai-status-doing .link-wrap .info-section .price-current .value{color:#d91615}
+.cui-pai-list .pai-status-break-show,.cui-pai-list .pai-status-doing-show,.cui-pai-list .pai-status-done-show,.cui-pai-list .pai-status-failure-show,.cui-pai-list .pai-status-revocation-show,.cui-pai-list .pai-status-todo-show{display:none}
+.cui-pai-list .pai-status-todo .pai-status-todo-show{display:block}
+.cui-pai-list .pai-status-doing .pai-status-doing-show{display:block}
+.cui-pai-list .pai-status-done .pai-status-done-show{display:block}
+.cui-pai-list .pai-status-failure .pai-status-failure-show{display:block}
+.cui-pai-list .pai-status-break .pai-status-break-show{display:block}
+.cui-pai-list .pai-status-revocation .pai-status-revocation-show{display:block}
+.cui-pai-list .baoming-btn{color: #d91615;}

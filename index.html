@@ -1,0 +1,940 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+
+<head>
+
+
+
+
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+
+
+
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="renderer" content="webkit">
+	<title>商丘市公共资源交易平台</title>
+	<meta name="Keywords" content="商丘市公共资源交易平台，商丘市公共资源交易服务平台，商丘市公共资源交易中心" />
+	<meta name="Description" content="商丘市公共资源交易平台" />
+	<meta http-equiv="Expires" CONTENT="0">
+	<meta http-equiv="Cache-Control" CONTENT="no-cache">
+	<meta http-equiv="Pragma" CONTENT="no-cache">
+
+	<link rel="shortcut icon" type="image/x-icon" href="/webSiteTheme/HNSQ/img/favicon.ico" media="screen" />
+	<link rel="stylesheet" type="text/css" href="static/css/ui-dialog.css" />
+	<link rel="stylesheet" type="text/css" href="static/css/style.css" />
+	<link rel="stylesheet" type="text/css" href="static/css/animsition.min.css" />
+	<link rel="stylesheet" type="text/css" href="static/css/animate.min.css" />
+	<link rel="stylesheet" type="text/css" href="static/css/tab.css" />
+
+	<link rel="stylesheet" type="text/css" href="/webSiteTheme/HNSQ/css/blackWhiteNo.css">
+
+	<script type="text/javascript" src="static/js/jquery.min.js"></script>
+	<script src="static/js/jquery.superslide.2.1.3.js" type="text/javascript"></script>
+	<script src="static/js/jquery.cookie.js" type="text/javascript"></script>
+	<script src="static/js/select.js" type="text/javascript"></script>
+	<script src="static/js/dialog-plus-min.js"></script>
+	<script src="static/js/layui.all.js" type="text/javascript"></script>
+	<script type="text/javascript" src="static/js/prettify.min.js"></script>
+	<script type="text/javascript" src="static/js/progress-bar.js"></script>
+	<script type="text/javascript" src="static/js/topbar.min.js"></script>
+	<script async defer data-website-id="25930dbb-fb93-4322-903c-9b78c8877662" src="static/js/umami.js"></script>
+	<script id="rrbayJs" src="static/js/wza.min.js" referrerpolicy="origin"></script>
+	<link rel="stylesheet" href="static/css/elder.css" type="text/css" />
+	<script type="text/javascript" src="static/js/hncawza.js" defer></script>
+	<script type="text/javascript">
+		var _webRootPath = "";
+		//console.log(location.href);
+		//if(location.href!="http://www.sqggzy.com/HNSQ/InformationCenter/NewsDetail.do?CID=3e80b57c-09a1-42d1-9151-2da67ee4cf92&ID=132f9e85-3ffd-47b4-9129-425649c78121") {
+		//   window.location.href="http://www.sqggzy.com/HNSQ/InformationCenter/NewsDetail.do?CID=3e80b57c-09a1-42d1-9151-2da67ee4cf92&ID=132f9e85-3ffd-47b4-9129-425649c78121"
+		//} 
+		//避免IE下出错
+		if (!window.console) {
+			window.console = {};
+		}
+		if (!window.console.log) {
+			window.console.log = function (msg) { };
+		}
+		if (!window.console.warn) {
+			window.console.warn = function (msg) { };
+		}
+		javascript: window.history.forward(1);//禁用浏览器后退按钮
+
+		function matchPhoneNum(str) {
+			var regx = /(1[3|4|5|7|8][\d]{9}|0[\d]{2,3}-[\d]{7,8}|400[-]?[\d]{3}[-]?[\d]{4})/g;
+
+			var phoneNums = str.match(regx);
+			if (phoneNums) {
+				for (var i = 0; i < phoneNums.length; i++) {
+					//手机号全部替换
+					//str = str.replace(phoneNums[i],"[****]");
+					var temp = phoneNums[i]
+					//隐藏手机号中间4位(例如:12300102020,隐藏后为132****2020)
+					temp = temp.replace(/(\d{3})\d{4}(\d{4})/, '$1****$2');
+					console.log("temp:" + temp);
+					str = str.replace(phoneNums[i], temp);
+				}
+			}
+			return str;
+		};
+	</script>
+
+	<style type="text/css" media="print">
+		.Noprint {
+			display: none;
+		}
+
+		ul,
+		li {
+			text-align: left;
+		}
+	</style>
+	<style type="text/css">
+		ul,
+		li {
+			text-align: left;
+		}
+
+		.noticeAbout li {
+			line-height: 30px;
+			height: 30px;
+			font-size: 16px;
+		}
+
+		.noticeAbout li a {
+			color: #0d406f;
+		}
+
+		.noticeAbout li {
+			width: 800px;
+			word-break: keep-all;
+			white-space: nowrap;
+			overflow: hidden;
+			text-overflow: ellipsis;
+		}
+	</style>
+	<link rel="stylesheet" type="text/css" href="static/css/cui-table.css" />
+</head>
+
+<body>
+	<div class="webtopbg">
+
+
+
+
+
+		<div class="top-h clearfix">
+			<div class="opacity bg"></div>
+			<div class="container">
+				<div class="fl">
+					<a href="javascript:void(0);" onclick="jumpLink('http://www.ggzy.gov.cn/');">全国公共资源交易平台</a>
+					<em class="line">|</em>
+					<a href="javascript:void(0);"
+					   onclick="jumpLink('http://ggzy.fgw.henan.gov.cn/');">河南省公共资源交易在线监管服务平台</a>
+					<a href="javascript:void(0);" title="网站支持IPv6访问">网站支持IPv6</a>
+					<!-- <a href="https://ipw.cn/ipv6webcheck/?site=ggzyjy.shangqiu.gov.cn" title="网站支持IPv6访问" target='_blank'>网站支持IPv6</a> -->
+
+
+				</div>
+				<div class="fr">
+					<div class="" style="position: absolute;font-size: 24px;text-align: center;right: 270px;top:0;">
+						<div
+							 style="    border-radius: 0px;width: 300px;display: flex;background: #c9be30;height: 32px;">
+							<!--	<a id="wzaElder" class="wzaElder" href="javascript:void(0);" accesskey="o" style="color: #fff;font-weight: bold;">无障碍丨适老化</a>-->
+							<div
+								 style="width:50%;height:100%;background-color:white;text-align:center;border:2px solid #FA842B;box-sizing: border-box;">
+								<a style="color:#FA842B" title="无障碍模式" href="javascript:;"
+								   onclick="hncawza();">无障碍模式</a>
+							</div>
+							<div style="width:50%;height:100%;background-color: #FFA421;text-align:center;">
+								<a style="color:white" title="适老模式" href="javascript:;" onclick="hncaslh()">适老模式</a>
+							</div>
+
+						</div>
+					</div>
+
+
+
+					<a><i class="top-user-icons"></i>
+						<a href="https://ggzyjy.shangqiu.gov.cn:5515/" target="_blank">用户登录</a>
+						|<a href="https://ggzyjy.shangqiu.gov.cn:5515/Register/Index" target="_blank">免费注册</a>
+						|
+						<script src="static/js/language.js" type="text/javascript"></script>
+					</a>
+
+
+				</div>
+			</div>
+		</div>
+
+
+		<script type="text/javascript">
+			var path = "";
+			//登录主体库
+			function toZTKLink() {
+				LinkUrl("https://ggzyjy.shangqiu.gov.cn:5515/Hub/ToZtk");
+			}
+
+			//BZJ
+			function toBZJLink() {
+				LinkUrl("https://ggzyjy.shangqiu.gov.cn:5515/Hub/ToBzj");
+			}
+		</script>
+
+		<div class="container">
+			<div class="main-pages">
+
+
+
+				<div class="header clearfix" style="position:relative;">
+					<div class="clearfix">
+						<div class="top_logos  fadeOut">
+							<div class="lg-img fl">
+							</div>
+							<div class="wenzi fl">
+								<div class="af"><img class=" fadeInRight delay-open"
+										 src="static/picture/loading-sangp.png" /></div>
+							</div>
+						</div>
+
+						<div class="top_logo  fl">
+							<a href="https://ggzyjy.shangqiu.gov.cn/HNSQ/Home/index.do">
+								<div class="lg-txt">
+									<img class="  delay-logo-txt" src="static/picture/logo.png" />
+								</div>
+							</a>
+						</div>
+						<div class="top_search fr  ">
+							<div class="search-bar">
+								<input type="text" placeholder="全站搜索" id="search-text">
+								<a href="javascript:;" onclick="toSearchKey();"><span class="search-bar-btn"></span></a>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<script>
+					function toSearchKey() {
+						window.location.href = "/HNSQ/Search/index.do?srzf=" + encodeURI($("#search-text").val());
+					}
+				</script>
+				<div class="openmain" style=""></div>
+
+				<div class="page-content clearfix">
+					<div class="page-slide">
+						<div class="nav-item">
+
+
+
+							<ul>
+								<li class="first " NavName="Home"><a title="首页" href="https://ggzyjy.shangqiu.gov.cn"><i
+										   class="icons home"></i>首&nbsp;&nbsp;页</a></li>
+								<li class="on" NavName="TradeCenter"><a title="交易信息"
+									   href="https://ggzyjy.shangqiu.gov.cn/HNSQ/Home/index.do?NavName=TradeCenter"><i
+										   class="icons transaction"></i>交易信息</a></li>
+								<li class="" NavName="Bsfw"><a title="办事服务" href="https://ggzyjy.shangqiu.gov.cn/HNSQ/Home/index.do?NavName=Bsfw"><i
+										   class="icons Bsfw"></i>办事服务</a></li>
+								<li class="" NavName="ServiceInteraction"><a title="交流互动"
+									   href="https://ggzyjy.shangqiu.gov.cn/HNSQ/Home/index.do?NavName=ServiceInteraction"><i
+										   class="icons jiaoliu"></i>交流互动</a></li>
+								<li class="" NavName="ZT"><a title="市场资信" href="https://ggzyjy.shangqiu.gov.cn/HNSQ/Home/index.do?NavName=ZT"><i
+										   class="icons"></i>市场资信</a></li>
+								<li class="last " NavName="DataCenter"><a title="政务公开"
+									   href="https://ggzyjy.shangqiu.gov.cn/HNSQ/Home/index.do?NavName=DataCenter"><i class="icons date"></i>政务公开</a>
+								</li>
+
+							</ul>
+
+						</div>
+
+
+
+
+
+
+
+
+
+
+
+						<div class="main-other">
+							<div class="position clearfix">
+								<span><i class="wz-icons"></i>您现在的位置 : <a href="https://ggzyjy.shangqiu.gov.cn/HNSQ/Home/index.do">首页</a>
+									<em> > </em>
+									<a
+									   href="https://ggzyjy.shangqiu.gov.cn/HNSQ/TradeCenter/tradeList.do?Deal_Type=Deal_Type2&Notice_Type=RESULT_NOTICE">建设工程</a>
+									<em>> </em>
+									<a>结果公告</a>
+								</span>
+								<span class="art-print art-otp fr"><a
+									   href="javascript:printdiv('resultNotice_content');">页面打印</a></span>
+							</div>
+
+
+							<div class="art-content clearfix" id="resultNotice_content">
+								<div class="ctable mb20 clearfix" id="tenderDoc_content">
+									<table class="arttb-style" border="" cellspacing="" cellpadding="">
+										<colgroup>
+											<col width="180px">
+											<col width="355px">
+											<col width="180px">
+											<col width="355px">
+										</colgroup>
+										<tbody>
+											<tr>
+												<td bgcolor="#d5efff">项目名称</td>
+												<td colspan="3" class="xmmc">夏邑县城区路网工程(一期)建设ppp项目</td>
+											</tr>
+											<tr>
+												<td bgcolor="#d5efff">投资项目代码</td>
+												<td colspan="3" class="xmmc">2307-411426-05-26-973395</td>
+											</tr>
+											<tr>
+												<td bgcolor="#d5efff">项目编号</td>
+												<td>E4114002441A03907</td>
+												<td bgcolor="#d5efff">招标人</td>
+												<td style="line-height:24px;">夏邑县路网建设有限责任公司</td>
+											</tr>
+											<tr>
+												<td bgcolor="#d5efff">交易分类</td>
+												<td>工程建设</td>
+												<td bgcolor="#d5efff">行政监管单位</td>
+												<td>夏邑县住房和城乡建设局</td>
+											</tr>
+
+											<tr>
+												<td bgcolor="#d5efff">相关公告</td>
+												<td colspan="3">
+													<ul class="noticeAbout" id="oneShow">
+
+
+
+
+
+
+														<li style="float: left;display: inline-block;"><a
+															   title="夏邑县城区路网工程(一期)建设ppp项目中标结果公告"
+															   href="javascript:;"><i></i>夏邑县城区路网工程(一期)建设ppp项目中标结果公告</a>
+														</li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+														<a href="javascript:"
+														   style="float: right;display: inline-block;height: 21px;font-size: 14px;"
+														   onclick="lookAllNotice();">展开<li
+																style="background: url(static/images/style-icons.png) -28px -342px no-repeat;width: 15px;height: 10px;display: inline-block;position: relative;">
+															</li></a>
+
+													</ul>
+
+													<ul class="noticeAbout" id="moreShow" style="display: none;">
+
+
+
+
+
+
+														<li>
+
+
+															<a title="夏邑县城区路网工程(一期)建设ppp项目中标结果公告"
+															   href="javascript:;"><i></i>夏邑县城区路网工程(一期)建设ppp项目中标结果公告</a>
+														</li>
+
+														<a href="javascript:"
+														   style="float: right;display: inline-block;height: 21px;font-size: 14px;"
+														   onclick="lookAllNotice();">收起<li
+																style="background: url(static/images/style-icons.png) 0px -342px no-repeat;width: 15px;height: 10px;display: inline-block;position: relative;">
+															</li></a>
+													</ul>
+												</td>
+											</tr>
+
+											<tr>
+												<td colspan="4" class="ttr" bgcolor="#fff">发布日期：2020-06-19 14:30 &nbsp;
+
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+								<div class="title">
+									<h2>夏邑县城区路网工程(一期)建设ppp项目中标结果公告</h2>
+								</div>
+								<div class="content-box" id="content-box-id">
+									<meta http-equiv="Content-Type" />
+									<meta http-equiv="Content-Style-Type" />
+									<meta name="generator" />
+									<title></title>
+									<div>
+										<p
+										   style="margin-top:0pt; margin-bottom:0pt; text-align:center; widows:0; orphans:0; font-size:22pt">
+											<span style="font-family:宋体; font-weight:bold"></span>
+										</p>
+										<p
+										   style="margin-top:0;margin-right:0;margin-bottom:0;margin-left:0;text-indent:0;text-align:center;line-height:150%">
+											<strong><span
+													  style="line-height: 150%; letter-spacing: 0px;">夏邑县城区路网工程(一期)建设ppp项目中标结果公告</span></strong>
+										</p>
+										<p
+										   style="margin-top:0;margin-right:0;margin-bottom:0;margin-left:0;text-indent:0;text-align:center;line-height:150%">
+											<strong><span
+													  style="line-height: 150%; letter-spacing: 0px;">中标结果公告</span></strong>
+										</p>
+										<p
+										   style="margin-top:0;margin-right:0;margin-bottom:0;margin-left:0;text-indent:0;text-align:justify;text-justify:inter-ideograph;line-height:150%">
+											<strong><span style="letter-spacing: 0px;">一、招标项目概况</span></strong>
+										</p>
+										<p
+										   style="margin-top:0;margin-right:0;margin-bottom:0;text-align:justify;text-justify:inter-ideograph;line-height:150%">
+											<span style="letter-spacing: 0px;">1、项目名称：夏邑县城区路网工程(一期)建设ppp项目</span>
+										</p>
+										<p
+										   style="margin-top:0;margin-right:0;margin-bottom:0;text-align:justify;text-justify:inter-ideograph;line-height:150%">
+											<span style="letter-spacing: 0px;">2、招标编号：商工程〔2020〕051号</span>
+										</p>
+										<p
+										   style="margin-top:0;margin-right:0;margin-bottom:0;text-indent:32px;text-align:justify;text-justify:inter-ideograph;line-height:150%">
+											<span style="letter-spacing: 0px;">项目编号：夏财采招-2020-06-19</span>
+										</p>
+										<p
+										   style="margin-top:0;margin-right:0;margin-bottom:0;text-align:justify;text-justify:inter-ideograph;line-height:150%">
+											<span style="letter-spacing: 0px;">3、项目代码：2307-411426-04-01-973395</span>
+										</p>
+										<p
+										   style="margin-top:0;margin-right:0;margin-bottom:0;text-align:justify;text-justify:inter-ideograph;line-height:150%">
+											<span style="letter-spacing: 0px;">4、资金来源：财政资金</span>
+										</p>
+										<p
+										   style="margin-top:0;margin-right:0;margin-bottom:0;text-align:justify;text-justify:inter-ideograph;line-height:150%">
+											<span style="letter-spacing: 0px;">5、招标控制价：47000万元；</span>
+										</p>
+										<p
+										   style="margin-top:0;margin-right:0;margin-bottom:0;margin-left:0;text-indent:0;text-align:justify;text-justify:inter-ideograph;line-height:150%">
+											<strong><span style="letter-spacing: 0px;">二、招标公告发布媒体及时间</span></strong>
+										</p>
+										<p
+										   style="margin-top:0;margin-right:0;margin-bottom:0;margin-left:0;text-indent:37px;text-align:justify;text-justify:inter-ideograph;line-height:150%">
+											<span
+												  style="letter-spacing: 0px;">本项目招标公告于2020年05月20日在《河南省政府采购网》、《商丘市公共资源交易服务平台》、《河南省电子招标投标公共服务平台》上发布。</span>
+										</p>
+										<p
+										   style="margin-top:0;margin-right:0;margin-bottom:0;margin-left:0;text-indent:0;text-align:justify;text-justify:inter-ideograph;line-height:150%">
+											<strong><span style="letter-spacing: 0px;">三、评、定标信息</span></strong>
+										</p>
+										<p
+										   style="margin-top:0;margin-right:0;margin-bottom:0;text-align:justify;text-justify:inter-ideograph;line-height:150%">
+											<span style="letter-spacing: 0px;">1、评标时间：2020年06月15日</span>
+										</p>
+										<p
+										   style="margin-top:0;margin-right:0;margin-bottom:0;text-align:justify;text-justify:inter-ideograph;line-height:150%">
+											<span style="letter-spacing: 0px;">2、评标地点：商丘市公共资源交易中心评标室</span>
+										</p>
+										<p
+										   style="margin-top:0;margin-right:0;margin-bottom:0;text-align:justify;text-justify:inter-ideograph;line-height:150%">
+											<span style="letter-spacing: 0px;">3、定标时间：2020年06月19日</span><span
+												  style="letter-spacing: 0px;">30</span><span
+												  style="letter-spacing: 0px;">日</span>
+										</p>
+										<p
+										   style="margin-top:0;margin-right:0;margin-bottom:0;text-align:justify;text-justify:inter-ideograph;line-height:150%">
+											<span style="letter-spacing: 0px;">4、定标方法：核查随机法</span>
+										</p>
+										<p
+										   style="margin-top:0;margin-right:0;margin-bottom:0;text-align:justify;text-justify:inter-ideograph;line-height:150%">
+											<span style="letter-spacing: 0px;">5、定标地点：商丘市公共资源交易中心定标室</span>
+										</p>
+										<p
+										   style="margin-top:0;margin-right:0;margin-bottom:0;text-align:justify;text-justify:inter-ideograph;line-height:150%">
+											<strong><span style="letter-spacing: 0px;">四、评、定标委员会名单</span></strong>
+										</p>
+										<p
+										   style="margin-top:0;margin-right:0;margin-bottom:0;text-align:justify;text-justify:inter-ideograph;line-height:150%">
+											<span style="letter-spacing: 0px;">评标委员会名单</span><span
+												  style="letter-spacing: 0px;">：</span><span
+												  style="letter-spacing: 0px;">组长：郭榕晓，成员：崔家红、任广州、李在允、范倩（业主代表）。</span>
+										</p>
+										<p
+										   style="margin-top:0;margin-right:0;margin-bottom:0;text-align:justify;text-justify:inter-ideograph;line-height:150%">
+											<span style="letter-spacing: 0px;">定标委员会名单：组长：</span><span
+												  style="letter-spacing: 0px;">何满意，</span><span
+												  style="letter-spacing: 0px;">成员：</span><span
+												  style="letter-spacing: 0px;">程凯</span><span
+												  style="letter-spacing: 0px;">、</span><span
+												  style="letter-spacing: 0px;">徐明明。</span>
+										</p>
+										<p
+										   style="margin-top:0;margin-right:0;margin-bottom:0;margin-left:0;text-indent:0;text-align:justify;text-justify:inter-ideograph;line-height:150%">
+											<strong><span style="letter-spacing: 0px;">五、中标结果</span></strong>
+										</p>
+										<p
+										   style="margin-top:0;margin-right:0;margin-bottom:0;text-align:justify;text-justify:inter-ideograph;line-height:150%">
+											<span style="letter-spacing: 0px;">中 标</span><span
+												  style="letter-spacing: 0px;">&nbsp;</span><span
+												  style="letter-spacing: 0px;">人：聚源市政工程有限公司</span>
+										</p>
+										<p
+										   style="margin-top:0;margin-right:0;margin-bottom:0;text-align:justify;text-justify:inter-ideograph;line-height:150%">
+											<span style="letter-spacing: 0px;">中 标 价：470000000元</span><span
+												  style="letter-spacing: 0px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span
+												  style="letter-spacing: 0px;">大写：肆亿柒仟万元整</span>
+										</p>
+										<p
+										   style="margin-top:0;margin-right:0;margin-bottom:0;text-align:justify;text-justify:inter-ideograph;line-height:150%">
+											<span style="letter-spacing: 0px;">资格能力条件：符合招标文件要求</span>
+										</p>
+										<p
+										   style="margin-top:0;margin-right:0;margin-bottom:0;text-align:justify;text-justify:inter-ideograph;line-height:150%">
+											<span style="letter-spacing: 0px;">质量标准：合格</span>
+										</p>
+										<p
+										   style="margin-top:0;margin-right:0;margin-bottom:0;text-align:justify;text-justify:inter-ideograph;line-height:150%">
+											<span style="letter-spacing: 0px;">工</span><span
+												  style="letter-spacing: 0px;">&nbsp;&nbsp;</span><span
+												  style="letter-spacing: 0px;">期：730日历天</span>
+										</p>
+										<p
+										   style="margin-top:0;margin-right:0;margin-bottom:0;text-align:justify;text-justify:inter-ideograph;line-height:150%">
+											<span style="letter-spacing: 0px;">项目负责人：李敬辉</span>
+										</p>
+										<p
+										   style="margin-top:0;margin-right:0;margin-bottom:0;text-align:justify;text-justify:inter-ideograph;line-height:150%">
+											<span style="letter-spacing: 0px;">证书名称：一级建造师注册证书</span>
+										</p>
+										<p
+										   style="margin-top:0;margin-right:0;margin-bottom:0;margin-left:0;text-indent:0;text-align:justify;text-justify:inter-ideograph;line-height:150%">
+											<span style="letter-spacing: 0px;">证书编号：豫241171719084</span>
+										</p>
+										<p
+										   style="margin-top:0;margin-right:0;margin-bottom:0;margin-left:0;text-indent:0;text-align:justify;text-justify:inter-ideograph;line-height:150%">
+											<strong><span style="letter-spacing: 0px;">六、异议和投诉渠道</span></strong>
+										</p>
+										<p
+										   style="margin-top:0;margin-right:0;margin-bottom:0;margin-left:0;text-indent:0;text-align:justify;text-justify:inter-ideograph;line-height:150%">
+											<span
+												  style="letter-spacing: 0px;">1、异议提出：各投标人对本公告有异议的，应当在公示期内以书面形式由法定代表人或授权委托代表签字并加公章向招标人或招标代理机构提出，逾期不再受理。</span>
+										</p>
+										<p
+										   style="margin-top:0;margin-right:0;margin-bottom:0;margin-left:0;text-indent:0;text-align:justify;text-justify:inter-ideograph;line-height:150%">
+											<span
+												  style="letter-spacing: 0px;">2、投诉提出：对异议答复不满意的，按有关规定以书面形式向相关监督部门投诉。</span>
+										</p>
+										<p
+										   style="margin-top:0;margin-right:0;margin-bottom:0;margin-left:0;text-indent:0;text-align:justify;text-justify:inter-ideograph;line-height:150%">
+											<strong><span style="letter-spacing: 0px;">七</span></strong><strong><span
+													  style="letter-spacing: 0px;">、联系方式</span></strong>
+										</p>
+										<p
+										   style="margin-top:0;margin-right:0;margin-bottom:0;text-align:justify;text-justify:inter-ideograph;line-height:150%">
+											<span style="letter-spacing: 0px;">招标人：夏邑县路网建设有限责任公司</span>
+										</p>
+										<p
+										   style="margin-top:0;margin-right:0;margin-bottom:0;text-align:justify;text-justify:inter-ideograph;line-height:150%">
+											<span style="letter-spacing: 0px;">地址：夏邑县栗园东路</span>
+										</p>
+										<p
+										   style="margin-top:0;margin-right:0;margin-bottom:0;text-align:justify;text-justify:inter-ideograph;line-height:150%">
+											<span style="letter-spacing: 0px;">联系人：程先生</span>
+										</p>
+										<p
+										   style="margin-top:0;margin-right:0;margin-bottom:0;text-align:justify;text-justify:inter-ideograph;line-height:150%">
+											<span style="letter-spacing: 0px;">联系电话：0370-6115677</span>
+										</p>
+										<p
+										   style="margin-top:0;margin-right:0;margin-bottom:0;text-align:justify;text-justify:inter-ideograph;line-height:150%">
+											<span style="letter-spacing: 0px;">招标代理机构：河南栗润工程造价咨询有限公司</span>
+										</p>
+										<p
+										   style="margin-top:0;margin-right:0;margin-bottom:0;text-align:justify;text-justify:inter-ideograph;line-height:150%">
+											<span
+												  style="letter-spacing: 0px;">地址：商丘市睢阳区神火大道与长江路交叉口向北150米路西科技大楼北胡同</span>
+										</p>
+										<p
+										   style="margin-top:0;margin-right:0;margin-bottom:0;text-align:justify;text-justify:inter-ideograph;line-height:150%">
+											<span style="letter-spacing: 0px;">联系人：凌女士</span>
+										</p>
+										<p
+										   style="margin-top:0;margin-right:0;margin-bottom:0;text-align:justify;text-justify:inter-ideograph;line-height:150%">
+											<span style="letter-spacing: 0px;">电话：0370-3222908</span>
+										</p>
+										<p
+										   style="margin-top:0;margin-right:0;margin-bottom:0;text-align:justify;text-justify:inter-ideograph;line-height:150%">
+											<span style="letter-spacing: 0px;">监督单位：商丘市交通运输局</span>
+										</p>
+										<p
+										   style="margin-top:0;margin-right:0;margin-bottom:0;text-align:justify;text-justify:inter-ideograph;line-height:150%">
+											<span style="letter-spacing: 0px;">地址：商丘市神火大道中段169号</span>
+										</p>
+										<p
+										   style="margin-top:0;margin-right:0;margin-bottom:0;text-align:justify;text-justify:inter-ideograph;line-height:150%">
+											<span style="letter-spacing: 0px;">联系人：胡先生</span>
+										</p>
+										<p
+										   style="margin-top:0;margin-right:0;margin-bottom:0;text-align:justify;text-justify:inter-ideograph;line-height:150%">
+											<span style="letter-spacing: 0px;">联系电话：0370-2562523</span>
+										</p>
+										<p style="margin-top:0;margin-right:0;margin-bottom:0;line-height:29px"><span
+												  style="letter-spacing: 0px;">&nbsp;</span></p>
+										<p
+										   style="margin-top:0;margin-right:0;margin-bottom:0;margin-left:0;text-indent:37px;text-align:right;line-height:150%">
+											<span style="letter-spacing: 0px;">河南栗润工程造价咨询有限公司</span>
+										</p>
+										<p
+										   style="margin-top:0;margin-right:0;margin-bottom:0;margin-left:0;text-indent:37px;text-align:right;line-height:150%">
+											<span style="letter-spacing: 0px;">2025年06月</span><span
+												  style="letter-spacing: 0px;">19</span><span
+												  style="letter-spacing: 0px;">日</span>
+										</p>
+										<p
+										   style="margin-top:0pt; margin-bottom:0pt; text-align:center; widows:0; orphans:0; font-size:22pt">
+											<span style="font-family:宋体; font-size:14pt"></span><br />
+										</p>
+									</div>
+								</div>
+
+							</div>
+
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<a id="downFileId" href="#" target="_blank"></a>
+
+
+
+		<input type="hidden" value="1" id="Notice_file_DownMethod">
+		<input type="hidden" value="https://ggzyjy.shangqiu.gov.cn:5550/jrupload6/downloadFile.html" id="UploadWebHost">
+
+		<input type="hidden" value="false" id="dlflag">
+		<input type="hidden" value="" id="needLogin_FileTypeName">
+		<input type="hidden" value="true" id="IsAllow_UnAccess_DownsRWB">
+		<input type="hidden" value="" id="bidSectionCode">
+		<input type="hidden" value="GCJS" id="projecttype">
+
+		<script type="text/javascript">
+
+			var path = "";
+
+			function tologinUrl() {
+				var Zurl = "https://ggzyjy.shangqiu.gov.cn:5515/?redirectURL=" + escape(window.location.href);
+				LinkUrl(Zurl);
+			}
+
+			function totips() {
+				var Zurl = "https://ggzyjy.shangqiu.gov.cn:5515/?redirectURL=" + escape(window.location.href);
+				layer.confirm('登录后方可下载文件，是否跳转到登录？', {
+					title: "提示", skin: 'zone-css',
+					btn: ['<div onclick="tologinUrl();">是</div>', '否'] //按钮
+				});
+			}
+			//跳转交易平台
+			function toTradeLink(bid) {
+				$.ajax({
+					type: "POST",
+					url: path + "https://ggzyjy.shangqiu.gov.cn/HNSQ/Home/ToTrade.do?direct",
+					data: { flag: "1", noticeid: "dd96b954-aa93-4ecf-b72e-3a6d482be46f", projecttype: "GCJS" },
+					dataType: "json",
+					cache: false,
+					async: false,
+					success: function (data) {
+						//window.location.href = "https://ggzyjy.shangqiu.gov.cn:5515/"; return ;
+
+						if (!data.status) {
+							if (data.msg == "1") {
+								alert("企业信息未发布，不能进入系统！");
+							}
+							else if (data.msg == "3") {
+								alert("未找到登录地址或无登录权限");
+							}
+							else if (data.msg == "5") {
+								var Zurl = "https://ggzyjy.shangqiu.gov.cn:5515/?redirectURL=" + escape("https://ggzyjy.shangqiu.gov.cn:5515/Hub/ToJypt.html?ProjectType=" + data.projecttype + "&NoticeID=" + data.noticeid + "&BID=" + bid);
+								LinkUrl(Zurl);
+								//window.location.href = "https://ggzyjy.shangqiu.gov.cn:5515/?redirectURL=https://ggzyjy.shangqiu.gov.cn:5515/Hub/ToJypt.html/?ProjectType="+data.projecttype +"&NoticeID="+data.noticeid;
+							}
+							else if (data.msg == "6") {
+								alert("角色无权进入工程建设系统");
+							}
+							else if (data.msg == "7") {
+								alert("角色无权进入政府采购系统");
+							}
+							else if (data.msg == "9") {
+								if (confirm("主体角色信息不完善，无权进入系统。是否去完善主体角色信息？")) {
+									toZTKLink();
+								}
+							}
+							else {
+								alert(data.msg);
+							}
+						} else {
+							//window.location.href = data.msg;
+							//var _url = "https://ggzyjy.shangqiu.gov.cn:5515/Hub/ToJypt.html/?ProjectType=GCJS&NoticeID=dd96b954-aa93-4ecf-b72e-3a6d482be46f&BID=&IsTB=1";
+							var Zurl = "https://ggzyjy.shangqiu.gov.cn:5515/Hub/ToJypt.html?ProjectType=GCJS&NoticeID=dd96b954-aa93-4ecf-b72e-3a6d482be46f&BID=" + bid;
+							LinkUrl(Zurl);
+						}
+					}
+				});
+			}
+			$(function () {
+
+				//相关公告
+				$('.other-a').click(function () {
+					if ($('.nt-lt').is(':hidden')) {
+						$('.nt-lt').show();
+					} else {
+						$('.nt-lt').hide();
+					}
+				})
+			})
+			var flag = "0";
+			function lookAllNotice() {
+				if (flag == "0") {
+					$("#oneShow").hide();
+					$("#moreShow").show();
+					flag = "1";
+				} else {
+					$("#oneShow").show();
+					$("#moreShow").hide();
+					flag = "0";
+				}
+			}
+		</script>
+
+
+
+
+		<div class="index-links clearfix" style="display:none;">
+			<div class="lianjie container clearfix">
+				<div class="model-select-box fl">
+					<div class="model-select-text" data-value="2"><span data-value="7">--国家部委网站--</span><i></i></div>
+					<ul class="model-select-option" id="xglj_xzjgbm" style="display: none;">
+
+
+
+						<a style="display:block" href="javascript:void(0);"
+						   onclick="jumpLink('https://www.ndrc.gov.cn/');">国家发展和改革委员会</a>
+
+						<a style="display:block" href="javascript:void(0);"
+						   onclick="jumpLink('https://www.miit.gov.cn/');">工业和信息化部</a>
+
+						<a style="display:block" href="javascript:void(0);"
+						   onclick="jumpLink('http://www.mof.gov.cn/');">财政部</a>
+
+						<a style="display:block" href="javascript:void(0);"
+						   onclick="jumpLink('http://www.mnr.gov.cn/');">自然资源部</a>
+
+						<a style="display:block" href="javascript:void(0);"
+						   onclick="jumpLink('https://www.mee.gov.cn/');">生态环境部</a>
+
+						<a style="display:block" href="javascript:void(0);"
+						   onclick="jumpLink('https://www.mohurd.gov.cn/');">住房和城乡建设部</a>
+
+						<a style="display:block" href="javascript:void(0);"
+						   onclick="jumpLink('https://www.mot.gov.cn/');">交通运输部</a>
+
+						<a style="display:block" href="javascript:void(0);"
+						   onclick="jumpLink('https://www.creditchina.gov.cn/');">信用中国</a>
+
+						<a style="display:block" href="javascript:void(0);"
+						   onclick="jumpLink('http://www.mwr.gov.cn/');">水利部</a>
+
+						<a style="display:block" href="javascript:void(0);"
+						   onclick="jumpLink('http://www.mofcom.gov.cn/');">商务部</a>
+
+
+
+					</ul>
+				</div>
+				<div class="model-select-box fl">
+					<div class="model-select-text" data-value="2"><span>--省市级政府网站--</span><i></i></div>
+					<ul class="model-select-option" id="xglj_sjzx" style="display: none;">
+
+
+
+						<a style="display:block" href="javascript:void(0);"
+						   onclick="jumpLink('https://www.henan.gov.cn/');">河南省政府</a>
+
+						<a style="display:block" href="javascript:void(0);"
+						   onclick="jumpLink('http://www.hnzwfw.gov.cn/');">河南政务服务网</a>
+
+						<a style="display:block" href="javascript:void(0);"
+						   onclick="jumpLink('http://www.shangqiu.gov.cn/');">商丘市政府</a>
+
+						<a style="display:block" href="javascript:void(0);"
+						   onclick="jumpLink('http://fgw.shangqiu.gov.cn/');">商丘市发展和改革委员会</a>
+
+						<a style="display:block" href="javascript:void(0);"
+						   onclick="jumpLink('http://www.hnggzy.com/');">河南省公共资源交易中心</a>
+
+
+
+					</ul>
+				</div>
+				<div class="model-select-box fl">
+					<div class="model-select-text" data-value="2"><span>--其他相关网站--</span><i></i></div>
+					<ul class="model-select-option" id="xglj_xglj" style="display: none;">
+
+
+
+						<a style="display:block" href="javascript:void(0);"
+						   onclick="jumpLink('https://ggzyjy.shangqiu.gov.cn:85');">商丘市公共资源监管平台</a>
+
+						<a style="display:block" href="javascript:void(0);"
+						   onclick="jumpLink('https://zcggzy.zhecheng.gov.cn');">柘城公共资源交易平台</a>
+
+
+
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<script type="text/javascript">
+			//跳转链接，添加confirm提示
+			function jumpLink(link) {
+				console.log(link)
+				if (confirm("您访问的链接即将离开“商丘市公共资源交易中心”门户网站是否继续?")) {
+					window.open(link, '_blank');
+				}
+			}
+		</script>
+
+
+
+
+
+		<div class="footer clearfix">
+			<div class="container" style="width: 1260px;">
+				<div class="foot-txt fl" style="width: 983px;">
+					<span>主办单位：商丘市公共资源交易中心</span>
+
+					备案号：
+					<a style="color:#fff;" href="javascript:void(0);"
+					   onclick="jumpLink('http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=41140302000020');"
+					   style=""><span style="margin-right: 0px;">豫公网安备41140302000020号</span></a>
+					<a style="color:#fff;" href="javascript:void(0);" onclick="jumpLink('https://beian.miit.gov.cn');"
+					   style=""><span style="margin-right: 0px;">豫ICP备16027330号-3</span></a>
+					<a style="color:#fff;" href="" target="_blank" style=""><span class="mr0">技术支持：金润方舟科技股份有限公司
+							(技术服务电话：400-819-9995)</span></a><br />
+					<span style="margin-right: 3px;">地址：商丘市睢阳区中州路与南京路交叉口西南角</span>
+
+					<span style="margin-right: 3px;">建议使用1366x768及以上分辨率，IE10及以上版本浏览器访问本网站 网站标识码：4114000042
+						网站举报电话：0370-2853651
+						<script
+								type="text/javascript">document.write(unescape("%3Cspan id='cnzz_stat_icon_1279203355'%3E%3C/span%3E%3Cscript src='https://v1.cnzz.com/z_stat.php%3Fid%3D1279203355%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));</script>
+					</span>
+				</div>
+				<div class="foot-img fr">
+					<a href="javascript:void(0);"
+					   onclick="jumpLink('http://wza.isc.org.cn/rzpt/bsgl/dt/20240808/3531.html');"><img
+							 src="static/picture/slh-logo.png" height="46" style="background-color:#fff" /></a>
+					<a href="javascript:void(0);"
+					   onclick="jumpLink('http://bszs.conac.cn/sitename?method=show&id=5506BBBA45255B28E053022819ACD48B');"><img
+							 src="static/picture/sydw-logo.png" width="37" height="46" /></a>
+					<a href="javascript:void(0);"
+					   onclick="jumpLink('http://121.43.68.40/exposure/jiucuo.html?site_code=4114000042&url=http%3A%2F%2Fwww.sqggzy.com%2F');"
+					   style="margin-left: 5px;"><img src="static/picture/zc-logo.png" width="100" height="50" /></a>
+				</div>
+			</div>
+		</div>
+
+
+		<script src="static/js/common.js" type="text/javascript"></script>
+
+
+
+
+
+
+		<div onmouseover="clearInterval(interval0)" onmouseout="toStart0()" id="imgPC0" class="spanex"
+			 style="position: absolute; z-index: 999; visibility: visible; top:400px; left: 600px;display:none;"
+			 align="right">
+			<div class="gglr-links">
+				<div style="display:flex;width:340px;height:120px;line-height:30px;color: #fff;text-align:center;font-size:22px;cursor: pointer;background-image:url('static/images/getimagemin.do');background-color:#008ed8;background-repeat:no-repeat;
+                background-size:100% 100%;
+                -moz-background-size:100% 100%;"
+					 onclick="tooldsitebyurl('https://ggzyjy.shangqiu.gov.cn/HNSQ/InformationCenter/NewsDetail.do?CID=3e80b57c-09a1-42d1-9151-2da67ee4cf92&amp;ID=33751587-aa03-402d-b960-be96c44e66c9','1');">
+					<div style="align-self:center;width:100%;">
+						<span style="margin:0px;padding:0px;">关于督促招标人及代理机构拷贝开评标音视频资料的通知</span>
+					</div>
+				</div>
+			</div>
+			<div style="display: block;">
+				<span onclick="clearInterval(interval0);img0.style.visibility = 'hidden';"
+					  style="position: absolute;top: -20px;right: 10px;cursor: pointer;font-size:14px;color:black;">
+					X关闭</span>
+			</div>
+		</div>
+
+		<div onmouseover="clearInterval(interval1)" onmouseout="toStart1()" id="imgPC1" class="spanex"
+			 style="position: absolute; z-index: 999; visibility: visible; top:400px; left: 600px;display:none;"
+			 align="right">
+			<div class="gglr-links">
+				<div style="display:flex;width:340px;height:120px;line-height:30px;color: #fff;text-align:center;font-size:22px;cursor: pointer;background-image:url('static/images/getimagemin.do');background-color:#008ed8;background-repeat:no-repeat;
+                background-size:100% 100%;
+                -moz-background-size:100% 100%;"
+					 onclick="tooldsitebyurl('https://ggzyjy.shangqiu.gov.cn/HNSQ/InformationCenter/NewsDetail.do?CID=3e80b57c-09a1-42d1-9151-2da67ee4cf92&amp;ID=bde33ab9-25d6-4646-9d5b-28af588b8f6a','1');">
+					<div style="align-self:center;width:100%;">
+						<span style="margin:0px;padding:0px;">商丘市公共资源交易中心 关于试运行“招标文件负面清单智能检查系统”的通知</span>
+					</div>
+				</div>
+			</div>
+			<div style="display: block;">
+				<span onclick="clearInterval(interval1);img1.style.visibility = 'hidden';"
+					  style="position: absolute;top: -20px;right: 10px;cursor: pointer;font-size:14px;color:black;">
+					X关闭</span>
+			</div>
+		</div>
+
+		<div onmouseover="clearInterval(interval2)" onmouseout="toStart2()" id="imgPC2" class="spanex"
+			 style="position: absolute; z-index: 999; visibility: visible; top:400px; left: 600px;display:none;"
+			 align="right">
+			<div class="gglr-links">
+				<div style="display:flex;width:340px;height:120px;line-height:30px;color: #fff;text-align:center;font-size:22px;cursor: pointer;background-image:url('static/images/getimagemin.do');background-color:#008ed8;background-repeat:no-repeat;
+                background-size:100% 100%;
+                -moz-background-size:100% 100%;"
+					 onclick="tooldsitebyurl('https://ggzyjy.shangqiu.gov.cn/HNSQ/InformationCenter/NewsDetail.do?CID=3e80b57c-09a1-42d1-9151-2da67ee4cf92&amp;ID=f05b1379-72b2-400c-8841-43349e56d4ed','1');">
+					<div style="align-self:center;width:100%;">
+						<span style="margin:0px;padding:0px;">关于启用移动数字证书（CA）全国互认功能的通知</span>
+					</div>
+				</div>
+			</div>
+			<div style="display: block;">
+				<span onclick="clearInterval(interval2);img2.style.visibility = 'hidden';"
+					  style="position: absolute;top: -20px;right: 10px;cursor: pointer;font-size:14px;color:black;">
+					X关闭</span>
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>
